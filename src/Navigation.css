@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation {
+    background: #7b2e2e;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.logo-area {
+    float: left;
+}
+
+.link-area {
+    float: right;
+}
+
+.navigation:after, .navigation:before {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.link-area ul li {
+    float: left;
+}
+
+    .link-area ul li a {
+        text-decoration: none;
+        color: #14da77;
+        padding: 7px 10px;
+        display: block;
+        transition: 0.3s;
+        font-size: 18px;
+    }
+
+        .link-area ul li a:hover {
+            color: #fff;
+        }

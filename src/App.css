@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+button{
+  outline: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-wheel{
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-name: App-logo-spin;
+  -webkit-animation-name: App-logo-spin;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+.App {
+  width: 40%;
+  margin: auto;
+  min-width: 600px;
+  background: #5d5dff;
+}
+.Upper {
+  display: flex;
+  -webkit-box-shadow: 0 8px 6px -6px #394e8c;
+  -moz-box-shadow: 0 8px 6px -6px #394e8c;
+  box-shadow: 0 8px 6px -6px #394e8c;
+  padding-bottom: 10px;
+}
+
+.Upper>div {
+  width: 50%;
+}
+
+.form-box {background: #fff;border-radius: 5px;overflow: hidden;}
+
+.App {
+  padding: 5px;
+}
+
+.input-area {
+  height: 40px;
+  position: relative;
+}
+
+.input-area .input-text {
+  width: 100%;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.input-area .placeholder {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffbfbf;
+  padding: 5px;
+  color: #ef1717;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #ff1010;
+  font-size: 11px;
+}
+.input-text {
+  text-align: left;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 8px;
+  font-weight: 500;
+}
+.button-box >div {
+  width: 33.33333%;
+  float: left;
+  padding: 20px 0;
+  border: 1px solid #d2aeae;
+  box-sizing: border-box;
+  border-bottom: none;
+  border-right: none;
+  cursor: pointer;
+  transition: 0.3s;
+  max-height: 84px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.button-box >div:nth-child(1),
+.button-box >div:nth-child(4),
+.button-box >div:nth-child(7) {
+  border-left: none;
+}
+.button-box >div:hover {
+  background: #dad5d5;
+}
+
+.wheel-box h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.wheel-box img {
+  border-radius: 50%;
+  width: 200px;
+  border: 1px solid #fff;
+  height: 195px;
+  cursor: pointer;
+}
+
+.wheel-box >div {
+  background: #fff;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: red;
+  margin-top: 18px;
+}
+.invalid-box {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,.6);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 44;
+}
+
+.invalid-area {
+  padding: 15px 25px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.invalid-area button {
+  display: block;
+  margin-top: 23px;
+  padding: 5px 18px;
+  text-transform: uppercase;
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+.bottom-button-box.button-box button {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+}
+.button-box > .add-ticket {
+  width: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.ticket-area {
+  text-align: left;
+  padding: 5px;
+ 
+}
+.ticket-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin-bottom: -35px;
+}
+
+.ticket-container >.ticket-box {
+  background: #ece4e4;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+.circle-box {
+  display: flex;
+}
+
+.circle-box >div {
+  padding: 10px;
+  background: #1b1b8c;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 18px;
+  padding-top: 2px;
+}
+
+.ticket-container >.ticket-box >span {
+  background: #fff;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #3b3be0;
+}
+
+.circle-box >button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+  border: none;
+  color: red;
+  background: #fff;
+  height: 40px;
+  font-size: 22px;
+  transform: translate(50%, -50%);
+  padding: 9px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle-box >button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.ticket-area h3 {
+  color: #fff;
+}
+.add-ticket{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.add-ticket button{
+  cursor: pointer;
+}
+.add-ticket .fa{
+  font-size: 17px;
+  font-weight: bold;
+}
